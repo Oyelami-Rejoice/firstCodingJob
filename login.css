@@ -1,0 +1,108 @@
+body {
+    background: #fdf6f1;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #fff;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(255, 140, 0, 0.09);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #ffb877;
+}
+
+h2, h3 {
+    margin-top: 0;
+    color: #ff8c00;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+   
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+input[type="number"],
+select,
+input[type="file"] {
+    padding: 8px 10px;
+    border: 1px solid #ffe0c2;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    background: #fff7f0;
+    color: #222;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #ff9900;
+    background: #fff0e0;
+}
+
+button {
+    background: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 11px 0;
+    font-size: 1.05rem;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    background: #c75c00;
+}
+
+.thank-you-box {
+    margin: 90px auto 0 auto;
+    max-width: 400px;
+    padding: 32px;
+    border: 2px solid #ffb877;
+    border-radius: 20px;
+    background: #fff7f0;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(255, 140, 0, 0.12);
+    color: #222;
+}
+
+.return-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #ff8c00;
+    text-decoration: underline;
+    font-weight: 500;
+}

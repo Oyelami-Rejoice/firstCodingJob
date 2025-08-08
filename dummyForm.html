@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML FORMS</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="myCss.css" />
+  </head>
+  <body>
+    <h1 class="heading1">
+      <u> Welcome to My Programming School!</u>
+    </h1>
+    <hr />
+    <p id="h1">This form will collect your information, let your information be true</p>
+    <form>
+      <!-- Personal Information -->
+      <div id="personal-info-div" class="fieldset-wrapper">
+        <fieldset id="personal-info-fieldset" class="fieldset-style">
+          <legend>Personal Information</legend>
+          <p>Please fill this Information</p>
+          <!-- Name -->
+          <label for="name">Enter Your Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="info"
+            placeholder="Surname, First Other"
+            required
+          /><br /><br />
+          <!-- Matric No -->
+          <label for="matNum">Enter Your Matric No:</label>
+          <input
+            type="text"
+            id="matNum"
+            name="matNum"
+            class="info"
+            placeholder="24CH12345"
+            required
+          /><br /><br />
+          <!-- Department -->
+          <label for="department">Enter Your Department</label>
+          <input
+            type="text"
+            id="department"
+            name="department"
+            class="info"
+            placeholder="MIS"
+            required
+          />
+          <br /><br />
+          <!-- Email -->
+          <label for="email">Enter Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            class="info"
+            name="email"
+            placeholder="example123@gmail.com"
+            required
+          />
+          <br /><br />
+          <!-- Phone -->
+          <label for="phoneNo">Enter Your Phone No:</label>
+          <input
+            type="tel"
+            id="phoneNo"
+            class="info"
+            name="phoneNo"
+            placeholder="+23412345678"
+            required
+          /><br /><br />
+          <!-- Hostel -->
+          <label for="hostel">Enter Your Hostel</label>
+          <select id="hostel" name="hostel" required>
+            <option value="">Please Pick an Hostel</option>
+            <option value="John Hall">John Hall</option>
+            <option value="Peter Hall">Peter Hall</option>
+            <option value="Esther Hall">Esther Hall</option>
+            <option value="Deborah Hall">Deborah Hall</option>
+            <option value="Paul Hall">Paul Hall</option>
+            <option value="Mary Hall">Mary Hall</option>
+            <option value="Joseph Hall">Joseph Hall</option>
+            <option value="Daniel Hall">Daniel Hall</option>
+            <option value="Lydia Hall">Lydia Hall</option></select
+          ><br /><br />
+          <!-- Room Number -->
+          <label for="rNum">Enter your Room No:</label>
+          <input
+            type="text"
+            id="rNum"
+            class="info"
+            name="Room Number"
+            placeholder="B304"
+            required
+          />
+          <!-- Gender -->
+          <p>
+            Please select your Gender<br />
+            <input
+              id="male"
+              type="radio"
+              class="genderr"
+              name="gender"
+              value="Male"
+              required
+            />
+            <label for="male">Male</label><br />
+            <input
+              id="female"
+              type="radio"
+              name="gender"
+              class="genderr"
+              value="Female"
+              required
+            />
+            <label for="female">Female</label><br />
+          </p>
+          <!-- Date of Birth -->
+          <label for="date">Select Date of Birth</label>
+          <input type="date" class="info" name="DOB" id="date" required />
+        </fieldset>
+      </div>
+
+      <!-- Parents and Guardian -->
+      <div id="parent-info-div" class="fieldset-wrapper">
+        <fieldset id="parent-info-fieldset" class="fieldset-style">
+          <legend>Parents/Guardians Information</legend>
+          <p>
+            <label for="parentName">Enter Your Full Name</label>
+            <input
+              type="text"
+              id="parentName"
+              name="parentName"
+              class="info"
+              placeholder="Surname, First Other"
+              required
+            /><br /><br />
+
+            Please select your Gender<br />
+            <input
+              id="pMale"
+              type="radio"
+              class="genderr"
+              name="ParentGender"
+              value="Male"
+              required
+            />
+            <label for="pMale">Male</label><br />
+            <input
+              id="pFemale"
+              type="radio"
+              name="ParentGender"
+              class="genderr"
+              value="Female"
+              required
+            />
+            <label for="pFemale">Female</label><br /><br />
+
+            <label for="gAge">Age</label>
+            <input
+              id="gAge"
+              type="number"
+              min="18"
+              placeholder="28"
+              name="ParentsAge"
+              required
+            />
+          </p>
+        </fieldset>
+      </div>
+
+      <!-- References -->
+      <div id="reference-info-div" class="fieldset-wrapper">
+        <fieldset id="reference-info-fieldset" class="fieldset-style">
+          <legend>References</legend>
+          <div id="reference-list-div" class="reference-list">
+            <ol>
+              <!-- Referee 1 -->
+              <li>
+                Referee 1
+                <ul>
+                  <li>
+                    <label for="r1Name">Name</label>
+                    <input
+                      type="text"
+                      id="r1Name"
+                      name="Referee1Name"
+                      class="info"
+                      placeholder="Surname, First Other"
+                      required
+                    />
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r1Work">Occupation</label>
+                    <input
+                      type="text"
+                      id="r1Work"
+                      name="Referee1Occupation"
+                      class="info"
+                      placeholder="e.g Doctor"
+                      required
+                    />
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r1Email">Email:</label>
+                    <input
+                      type="email"
+                      id="r1Email"
+                      class="info"
+                      name="Referee1Email"
+                      placeholder="example123@gmail.com"
+                      required
+                    />
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r1PhoneNo">Enter Your Phone Number</label>
+                    <input
+                      type="tel"
+                      id="r1PhoneNo"
+                      class="info"
+                      name="Referee1PhoneNo"
+                      placeholder="+23412345678"
+                      required
+                    />
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r1Option">Relationship to Student</label>
+                    <select id="r1Option" name="Referee1Relationship" required>
+                      <option value="">Please Choose one</option>
+                      <option value="Father">Father</option>
+                      <option value="Mother">Mother</option>
+                      <option value="Husband">Husband</option>
+                      <option value="Wife">Wife</option>
+                      <option value="Siblings">Siblings</option>
+                      <option value="Others">Others</option>
+                    </select>
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r1Upload">Upload Referee Letter</label>
+                    <input
+                      type="file"
+                      id="r1Upload"
+                      name="Referee1Letter"
+                      required
+                    />
+                  </li>
+                  <br />
+                </ul>
+              </li>
+              <!-- Referee 2 -->
+              <li>
+                Referee 2
+                <ul>
+                  <li>
+                    <label for="r2Name">Name</label>
+                    <input
+                      type="text"
+                      id="r2Name"
+                      name="Referee2Name"
+                      class="info"
+                      placeholder="Surname, First Other"
+                      required
+                    />
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r2Work">Occupation</label>
+                    <input
+                      type="text"
+                      id="r2Work"
+                      name="Referee2Occupation"
+                      class="info"
+                      placeholder="e.g Doctor"
+                      required
+                    />
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r2Email">Email:</label>
+                    <input
+                      type="email"
+                      id="r2Email"
+                      class="info"
+                      name="Referee2Email"
+                      placeholder="example123@gmail.com"
+                      required
+                    />
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r2PhoneNo">Enter Your Phone Number</label>
+                    <input
+                      type="tel"
+                      id="r2PhoneNo"
+                      class="info"
+                      name="Referee2PhoneNo"
+                      placeholder="+23412345678"
+                      required
+                    />
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r2Option">Relationship to Student</label>
+                    <select id="r2Option" name="Referee2Relationship" required>
+                      <option value="">Please Choose one</option>
+                      <option value="Father">Father</option>
+                      <option value="Mother">Mother</option>
+                      <option value="Husband">Husband</option>
+                      <option value="Wife">Wife</option>
+                      <option value="Siblings">Siblings</option>
+                      <option value="Others">Others</option>
+                    </select>
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r2Upload">Upload Referee Letter</label>
+                    <input
+                      type="file"
+                      id="r2Upload"
+                      name="Referee2Letter"
+                      required
+                    />
+                  </li>
+                  <br />
+                </ul>
+              </li>
+              <!-- Referee 3 -->
+              <li>
+                Referee 3
+                <ul>
+                  <li>
+                    <label for="r3Name">Name</label>
+                    <input
+                      type="text"
+                      id="r3Name"
+                      name="Referee3Name"
+                      class="info"
+                      placeholder="Surname, First Other"
+                      required
+                    />
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r3Work">Occupation</label>
+                    <input
+                      type="text"
+                      id="r3Work"
+                      name="Referee3Occupation"
+                      class="info"
+                      placeholder="e.g Doctor"
+                      required
+                    />
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r3Email">Email:</label>
+                    <input
+                      type="email"
+                      id="r3Email"
+                      class="info"
+                      name="Referee3Email"
+                      placeholder="example123@gmail.com"
+                      required
+                    />
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r3PhoneNo">Enter Your Phone Number</label>
+                    <input
+                      type="tel"
+                      id="r3PhoneNo"
+                      class="info"
+                      name="Referee3PhoneNo"
+                      placeholder="+23412345678"
+                      required
+                    />
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r3Option">Relationship to Student</label>
+                    <select id="r3Option" name="Referee3Relationship" required>
+                      <option value="">Please Choose one</option>
+                      <option value="Father">Father</option>
+                      <option value="Mother">Mother</option>
+                      <option value="Husband">Husband</option>
+                      <option value="Wife">Wife</option>
+                      <option value="Siblings">Siblings</option>
+                      <option value="Others">Others</option>
+                    </select>
+                  </li>
+                  <br />
+                  <li>
+                    <label for="r3Upload">Upload Referee Letter</label>
+                    <input
+                      type="file"
+                      id="r3Upload"
+                      name="Referee3Letter"
+                      required
+                    />
+                  </li>
+                  <br />
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </fieldset>
+      </div>
+
+      <!-- Schedule Selection -->
+      <div id="schedule-info-div" class="fieldset-wrapper">
+        <fieldset id="schedule-info-fieldset" class="fieldset-style">
+          <legend>Please Choose Your Preferable Schedule</legend>
+          <input
+            id="morning"
+            type="radio"
+            name="time"
+            value="Morning"
+            class="schedule-radio"
+            required
+          />
+          <label for="morning">Morning 8-10am</label><br />
+          <input
+            id="afternoon"
+            type="radio"
+            name="time"
+            value="Afternoon"
+            class="schedule-radio"
+            required
+          />
+          <label for="afternoon">Afternoon 12-2pm</label><br />
+          <input
+            id="evening"
+            type="radio"
+            name="time"
+            value="Evening"
+            class="schedule-radio"
+            required
+          />
+          <label for="evening">Evening 3-6pm</label><br />
+          <input
+            id="night"
+            type="radio"
+            name="time"
+            value="Night"
+            class="schedule-radio"
+            required
+          />
+          <label for="night">Night 7-9pm</label><br /><br />
+
+          <label for="Stack">Learning Stack</label>
+          <select id="Stack" name="option" required>
+            <option value="">Please Select a Course</option>
+            <option value="Beginners Web development">
+              Beginners Web development
+            </option>
+            <option value="Advanced Web development">
+              Advanced Web development
+            </option>
+            <option value="Beginners python">Beginners python</option>
+            <option value="Advanced python">Advanced python</option>
+            <option value="Learn R">Learn R</option>
+            <option value="Learn C">Learn C</option>
+          </select>
+          <br />
+
+          <!-- Resources -->
+          <p>
+            Select all that Applies<br />
+            <input
+              id="laptop"
+              type="checkbox"
+              name="laptop"
+              value="laptop"
+              class="schedule-radio"
+            />
+            <label for="laptop">Laptop</label><br />
+            <input
+              id="laptopCharger"
+              type="checkbox"
+              name="laptop charger"
+              value="laptop charger"
+              class="schedule-radio"
+            />
+            <label for="laptopCharger">Laptop charger</label><br />
+            <input
+              id="internetConnection"
+              type="checkbox"
+              name="Internet connection"
+              value="Internet connection"
+              class="schedule-radio"
+            />
+            <label for="internetConnection">Internet connection</label><br />
+            <input
+              id="accommodation"
+              type="checkbox"
+              name="Accommodation"
+              value="Accommodation"
+              class="schedule-radio"
+            />
+            <label for="accommodation">Accommodation</label><br />
+            <input
+              id="water"
+              type="checkbox"
+              name="Water"
+              value="Water"
+              class="schedule-radio"
+            />
+            <label for="water">Water</label><br />
+            <input
+              id="transport"
+              type="checkbox"
+              name="Transport"
+              value="Transport"
+              class="schedule-radio"
+            />
+            <label for="transport">Transport</label><br />
+            <input
+              id="feeding"
+              type="checkbox"
+              name="Feeding"
+              value="Feeding"
+              class="schedule-radio"
+            />
+            <label for="feeding">Feeding</label><br />
+            <input
+              id="materials"
+              type="checkbox"
+              name="Materials"
+              value="Materials"
+              class="schedule-radio"
+            />
+            <label for="materials">Materials</label><br />
+          </p>
+        </fieldset>
+      </div>
+
+      <!-- Additional Information -->
+      <div id="additional-info-div" class="fieldset-wrapper">
+        <fieldset id="additional-info-fieldset" class="fieldset-style">
+          <legend>Additional Information</legend>
+          <p>
+            <label for="motivation">Please type Your Motivation</label><br />
+            <textarea
+              id="motivation"
+              name="motivation"
+              placeholder="My Motivation (MAX 200 characters)"
+              rows="5"
+              cols="50"
+              maxlength="200"
+              required
+            ></textarea>
+            <br />
+            <label for="motivationUpload">Or upload from your system</label>
+            <input type="file" id="motivationUpload" name="motivationFile" />
+          </p>
+          <hr />
+          <label for="State_Pur">Statement of Purpose</label><br />
+          <textarea
+            id="State_Pur"
+            name="StatementOfPurpose"
+            rows="5"
+            cols="50"
+            required
+            placeholder="What is your Purpose (MAX 200 characters)"
+            maxlength="200"
+          ></textarea>
+          <br />
+          <label for="statePurposeUpload">Or upload from your system</label>
+          <input
+            type="file"
+            id="statePurposeUpload"
+            name="StatementOfPurposeFile"
+            required
+          />
+          <hr />
+          <p>
+            <label for="mFesoto">Manifesto</label><br />
+            <textarea
+              id="mFesoto"
+              name="Manifesto"
+              maxlength="300"
+              cols="50"
+              rows="5"
+              placeholder="What is your Manifesto(MAX 300 characters)"
+              required
+            ></textarea>
+            <br />
+            <label for="manifestoUpload">Or upload from your system</label>
+            <input type="file" id="manifestoUpload" name="ManifestoFile" />
+          </p>
+        </fieldset>
+      </div>
+
+      <!-- Payment Details -->
+      <div id="payment-info-div" class="fieldset-wrapper">
+        <fieldset id="payment-info-fieldset" class="fieldset-style">
+          <p>
+            The amount of each stack is 200k and will be removed from your bank
+            account over a period of three months
+          </p>
+          <input type="radio" id="payTerms" name="payTerms" required />
+          <label for="payTerms">I agree</label>
+          <hr />
+          <div id="bank-payment-div" class="bank-payment">
+            <label for="bPayment">Select the bank for payment</label>
+            <select id="bPayment" name="SelectedBank" required>
+              <option value="">Please Choose one</option>
+              <option value="GTB">GTB</option>
+              <option value="ACCESS">ACCESS</option>
+              <option value="FIRSTBANK">FIRSTBANK</option>
+              <option value="ECOBANK">ECOBANK</option>
+              <option value="OPAY">OPAY</option>
+              <option value="UNION BANK">UNION BANK</option>
+            </select>
+            <br /><br />
+            <!-- Payment Method -->
+            Select Payment Method<br />
+            <input
+              id="cash"
+              type="radio"
+              class="payment"
+              name="PaymentMethod"
+              value="Cash"
+              required
+            />
+            <label for="cash">Cash</label><br />
+            <input
+              id="card"
+              type="radio"
+              name="PaymentMethod"
+              class="payment"
+              value="Card"
+              required
+            />
+            <label for="card"><a href="bankCard.html">Card</a></label
+            ><br />
+            <input
+              id="transfer"
+              type="radio"
+              name="PaymentMethod"
+              class="payment"
+              value="Transfer"
+              required
+            />
+            <label for="transfer"><a href="transfer.html"> Transfer</a></label
+            ><br />
+          </div>
+        </fieldset>
+      </div>
+
+      <!-- ID Document -->
+      <div id="id-info-div" class="fieldset-wrapper">
+        <fieldset id="id-info-fieldset" class="fieldset-style">
+          <legend>Identification Document</legend>
+          <input
+            id="nin"
+            type="checkbox"
+            name="NIN"
+            value="NIN"
+            class="schedule-radio"
+          />
+          <label for="nin">NIN</label><br />
+          <input
+            id="BVN"
+            type="checkbox"
+            name="BVN"
+            value="BVN"
+            class="schedule-radio"
+          />
+          <label for="BVN">BVN</label><br />
+          <label for="id">Upload the means of ID from your system</label>
+          <input type="file" id="id" name="ID" accept=".pdf " required />
+        </fieldset>
+      </div>
+
+      <!-- Terms & Conditions -->
+      <div id="terms-info-div" class="fieldset-wrapper">
+        <fieldset id="terms-info-fieldset" class="fieldset-style">
+          <legend><strong>Terms and Conditions</strong></legend>
+          <input
+            type="checkbox"
+            id="terms"
+            name="TermsAndConditions"
+            required
+          />
+          I agree to the <a href="intro.html"><em>Terms & Conditions</em></a>
+        </fieldset>
+      </div>
+
+      <br /><br />
+      <div id="footer">
+        <input type="submit" name="submit" value="Register" style="margin-right: 10px;" />
+        <input type="reset" value="Reset" style="margin-left: 10px;" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.demo {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: white;
+  margin-top: 10px;
+}
+
+/* Common styles for items */
+.item {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.a { background: dodgerblue; }
+.b { background: tomato; }
+.c { background: teal; }
+.d { background: purple; }
+.e { background: orange; }
+
+/* 1. Direction types */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 2. Wrap types */
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* 3. Main axis alignment */
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 4. Cross axis alignment */
+.align-center {
+  display: flex;
+  height: 150px;
+  align-items: center;
+  background: #eee;
+}
+
+/* 5. Flex values */
+.equal {
+  display: flex;
+}
+.equal .item {
+  flex: 1; /* equal growth */
+}
+
+.ratio {
+  display: flex;
+}
+.ratio .a { flex: 2; } /* grows twice as much */
+.ratio .b { flex: 1; }
+.ratio .c { flex: 1; }
+
+.fixed {
+  display: flex;
+}
+.fixed .a { flex: 0 0 150px; } /* fixed size */
+.fixed .b { flex: 1; }
+
+.shrink-only {
+  display: flex;
+}
+.shrink-only .a { flex: 0 1 auto; }
+.shrink-only .b { flex: 0 1 auto; }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Information</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Job & Personal Information</h2>
+        <form action="thankyou.html" method="get">
+            <!-- Job Information -->
+            <h3>1. Job Information</h3>
+            <div class="row">
+                <div>
+                    <label>Position Category</label>
+                    <select required>
+                        <option value="">Select Category</option>
+                        <option>IT</option>
+                        <option>HR</option>
+                        <option>Finance</option>
+                        <option>Marketing</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Post Applied For</label>
+                    <select required>
+                        <option value="">Select Post</option>
+                        <option>Manager</option>
+                        <option>Analyst</option>
+                        <option>Intern</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Personal Information -->
+            <h3>2. Personal Information</h3>
+            <div class="row">
+                <div>
+                    <label>Full Name</label>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label>Surname (Underline)</label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label>Date of Birth</label>
+                    <input type="date" required>
+                </div>
+                <div>
+                    <label>Place of Birth</label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label>Permanent Home Address</label>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label>Contact Address</label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label>Mobile Phone Number</label>
+                    <input type="tel" required>
+                </div>
+                <div>
+                    <label>Email Address</label>
+                    <input type="email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label>Nationality</label>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label>State of Origin</label>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label>Local Government of Origin</label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label>Marital Status</label>
+                    <select>
+                        <option value="">Select Status</option>
+                        <option>Single</option>
+                        <option>Married</option>
+                        <option>Divorced</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Number of Children</label>
+                    <input type="number" min="0" max="20" value="0">
+                </div>
+            </div>
+            <!-- Five more categories -->
+            <h3>3. Additional Information</h3>
+            <div class="row">
+                <div>
+                    <label>Highest Education Level</label>
+                    <select required>
+                        <option value="">Select</option>
+                        <option>Bachelor's</option>
+                        <option>Master's</option>
+                        <option>PhD</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Work Experience (years)</label>
+                    <input type="number" min="0" max="40">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label>On-going Research?</label>
+                    <input type="checkbox"> Yes
+                </div>
+                <div>
+                    <label>Referees</label>
+                    <input type="text" placeholder="Referee Name">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label>Upload CV/Document</label>
+                    <input type="file">
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
