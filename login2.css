@@ -1,0 +1,134 @@
+:root {
+    --bg: #9b4de0;
+    --form-max: 360px;
+    --text: #ffffffcc;
+    --muted: #ffffff99;
+    --input-bg: #ffffff15;
+    --input-border: #ffffff40;
+    --input-text: #ffffff;
+    --accent: #ffe36e;
+    --accent-text: #3b2c00;
+    --btn-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    --focus: 2px solid #fff;
+}
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "Inter", system-ui, Arial,sans-serif;
+    color: var(--text);
+    background: var(--bg);
+}
+
+.wrap {
+    min-height: 100dvh;
+    display: grid;
+    padding: 40px 20px;
+    max-width: var(--form-max);
+    margin: 65px auto 0 auto;
+}
+
+.login {
+    width: 100%;
+    max-width: var(--form-max);
+    text-align: center;
+}
+
+.title-small {
+    font-weight: 700;
+    margin: 0 0 10px;
+    opacity: 0.9;
+}
+
+.title-large {
+    margin: 0 0 26px;
+    font-size: 28px;
+    font-weight: 650;
+}
+
+form {
+    text-align: left;
+}
+
+.field {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 14px;
+}
+
+.input {
+    border: 0px;
+    outline: none;
+    background: var(--bg);
+    box-shadow: 0;
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 8px 0 22px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--accent);
+}
+
+.link {
+    color: #ffffffde;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 11px 14px;
+    border: 0;
+    border-radius: 6px;
+    background: var(--accent);
+    color: var(--accent-text);
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--btn-shadow);
+}
+
+.divider {
+    text-align: center;
+    color: var(--muted);
+    margin: 22px 0;
+    font-size: 14px;
+}
+
+.social {
+   display: flex;
+   gap: 12px;
+}
+
+.sbtn {
+    background: #fff;
+    color: #2c2c2c;
+    border: 0;
+    border-radius: 6px;
+    padding: 10px 12px;
+    cursor: pointer;
+    box-shadow: var(--btn-shadow);
+    width: 160px;
+}
